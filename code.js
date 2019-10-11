@@ -4,11 +4,19 @@ function helloWorld() {
 }
 
 function sayHello(input) {
-    if (input === "Alex") {
-        return "Hello, Alex!"
-    } else if(input === "Pat"){
-        return "Hello, Pat!"}
-    else{
-        return "Hello, Jane!";
+    if (typeof input === 'boolean') {
+        return helloWorld();
+    } else if (input === null){
+            return helloWorld();
+    } else if (input === ""){
+        return helloWorld();
+    } else if (input === undefined) {
+        return helloWorld();
+    } else if (typeof input === 'number') {
+        return helloWorld();
+    } else if (typeof !isNaN(parseFloat(input)) === 'number' && 'string') {
+        return helloWorld();
+    } else {
+        return "Hello, " + input + "!";
     }
 }
