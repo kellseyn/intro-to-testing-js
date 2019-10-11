@@ -3,4 +3,6 @@ function helloWorld() {
     return "Hello, World!";
 }
 
-hi
+function sayHello() {
+
+}
